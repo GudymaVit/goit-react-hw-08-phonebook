@@ -25,13 +25,9 @@ const Register = () => {
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(authOperations.register({ name, email, password }));
-    reset();
+  
   };
-  const reset = () => {
-    setName('');
-    setEmail('');
-    setPassword('');
-  };
+ 
 
   return (
     <div className={styles.container}>
